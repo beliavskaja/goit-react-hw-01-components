@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import getRandomColor from './getRandomColor';
+import getRandomColor from '../../helpers/getRandomColor';
 
 export const StatisticsSection = styled.section`
     width: 300px;

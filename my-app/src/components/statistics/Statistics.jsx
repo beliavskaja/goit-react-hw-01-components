@@ -6,6 +6,7 @@ import {
     StatisticsItemLabel,
     StatisticsItemPercentage,
 } from './Statistics.styled';
+import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
     return (
@@ -21,6 +22,17 @@ const Statistics = ({ title, stats }) => {
     </StatisticsList>
 </StatisticsSection>
     );
+};
+
+Statistics.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
+        }),
+    ),
 };
 
 export default Statistics;
