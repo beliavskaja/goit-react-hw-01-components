@@ -1,0 +1,168 @@
+/* ======= General ======= */
+:root {
+  --main-font: "Roboto", sans-serif;
+  --accent-color: #2196f3;
+  --main-text-color: #212121;
+  --sections-background-color: #2f303a;
+}
+
+body {
+  font-family: var(--main-font);
+  color: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0%;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* ======= Header =======*/
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header-container {
+  padding: 30px 15px 5px 15px;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--accent-color);
+}
+
+.main-link,
+.menu-link {
+  color: var(--main-text-color);
+}
+
+.menu-link:focus,
+.menu-link:hover {
+  color: var(--accent-color);
+}
+
+/* ======= Hero ======= */
+.hero-section {
+  background-image: url(/Img/arendsee.jpg);
+  background-size: cover;
+  height: 800px;
+  padding: 50px;
+}
+/* ======= Photo galery ======= */
+.galerie-section {
+  padding: 50px 70px 50px 70px;
+}
+.galerie-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -35px;
+  margin-top: -35px;
+}
+
+.galerie-item {
+  flex-basis: calc((100% - 105px) / 3);
+  margin-left: 35px;
+  margin-top: 35px;
+  border: #2196f3;
+  box-shadow: 7px 7px 0 0 rgb(55, 76, 114);
+}
+.galerie-item:hover,
+.galerie-item:focus {
+  box-shadow: 7px 7px 0 0 rgb(43, 106, 223);
+}
+
+/* ======= News ======= */
+.news-item {
+  display: flex;
+}
+
+.news-name {
+  margin-bottom: 20px;
+}
+
+.news-img {
+  border: #2196f3;
+  margin-left: auto;
+  padding: 15px;
+}
+
+.news-description {
+  display: block;
+  max-width: 700px;
+  padding-left: 35px;
+}
+
+/* ======= Fotter ====== */
+.footer {
+  background-color: rgb(19, 5, 53);
+}
+
+.contacts-section {
+  padding: 15px;
+}
+
+.footer-logo {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-tel-link,
+.footer-email-link,
+.footer-address-link {
+  color: darkgrey;
+}
+
+.footer-tel,
+.footer-email {
+  margin-bottom: 10px;
+}
